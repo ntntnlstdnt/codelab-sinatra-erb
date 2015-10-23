@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+  </head>
+  <body>
+    <img src="<%= params['picture'] %>" alt="none" />
+    <ul>
+      <li><%= params['name']%></li>
+      <li><%= params['sex']%></li>
+      <li><%= params['occupation']%></li>
+      <li><%= params['lookingFor']%></li>
+    </ul>
+
+    <form action="//formspree.io/international.resource.help@gmail.com"
+      method="POST">
+    Name
+    <input type="text" name="name"><br>
+    Email
+    <input type="email" name="_replyto"><br>
+    Comments/Suggestions
+    <input type="text" name="_comments"><br>
+    <input type="submit" value="Send"><br>
+</form>
+  </body>
+</html>
