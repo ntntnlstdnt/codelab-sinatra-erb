@@ -3,18 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Dating Form</title>
+    <style>
+      body{
+        padding: 50px;
+      }
+      input{
+        margin: 20px 10px;
+      }
+    label{
+      width: 100px;
+      display: inline-block;
+    }
+    </style>
   </head>
   <body>
     <form action="/profile">
-      Name
+      <label for="name">Name</label>
       <input  name="name"><br>
-      Sex
+      <label for="sex">Sex</label>
       <input name="sex"><br>
-      Occupation
+      <label for="occupation">Occupation</label>
       <input name="occupation"><br>
-      Looking for:
+      <label for="lookingFor">Looking for:</label>
       <input name="lookingFor"><br>
-      Picture
+      <label for="">Picture</label>
       <input name="picture"><br>
       <button type="submit">Create Profile</button>
     </form>
