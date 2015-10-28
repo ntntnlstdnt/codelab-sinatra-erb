@@ -18,17 +18,20 @@
   #comments{
       width: 300px;
   }
+  img.profile-pic {
+    max-width: 100px;
+  }
 
     </style>
   </head>
   <body>
-    <img src="<%= params['picture'] %>" alt="none" height="150" width="100">
-    <ul>
-      <li><%= params['name']%></li>
-      <li><%= params['sex']%></li>
-      <li><%= params['occupation']%></li>
-      <li><%= params['lookingFor']%></li>
-    </ul>
+    <img src="<%= params['picture'] %>" alt="none">
+
+      <p>Hello my name is <%= params['name']%></p>
+      <p>And I am a <%=params['sex']%></p>
+      <p>Professionally I'm a <%= params['occupation']%></p>
+      <p>I am here looking for <%= params['lookingFor']%></p>
+
 
     <form action="//formspree.io/international.resource.help@gmail.com"
       method="POST">
